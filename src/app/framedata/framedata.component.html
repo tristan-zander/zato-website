@@ -1,1 +1,15 @@
-<p>framedata works!</p>
+
+<div>
+    <div class="framedata-secion" *ngFor="let data of framedata">
+        <h1>{{ data.moveTitle}}</h1>
+        <p>{{ data.description }}</p>
+        <table>
+            <tr>
+                <td>{{ data.startupFrames }}</td>
+                <td>{{ data.activeFrames }}</td>
+                <td> {{ data.recoveryFrames}} </td>
+                <td> {{ data.onBlockFrames }} </td>
+            </tr>
+        </table>
+    </div>
+</div>

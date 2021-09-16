@@ -1,21 +1,24 @@
-
-<div>
-    <div class="framedata-secion" *ngFor="let data of framedata">
-        <h1>{{ data.moveTitle}}</h1>
-        <p>{{ data.description }}</p>
-        <table>
-            <tr>
-                <th>Startup</th>
-                <th>Active</th>
-                <th>Recovery</th>
-                <th>onBlockFrames</th>
-            </tr>
-            <tr>
-                <td>{{ data.startupFrames }}</td>
-                <td>{{ data.activeFrames }}</td>
-                <td> {{ data.recoveryFrames}} </td>
-                <td> {{ data.onBlockFrames }} </td>
-            </tr>
-        </table>
-    </div>
-</div>
+<mat-tab-group>
+    <mat-tab label="Normals">
+        <mat-card class="framedata-secion" *ngFor="let data of framedata">
+            <mat-card-title>{{ data.moveTitle}}</mat-card-title>
+            <p>{{ data.description }}</p>
+            <table>
+                <tr>
+                    <th>Startup</th>
+                    <th>Active</th>
+                    <th>Recovery</th>
+                    <th>onBlockFrames</th>
+                </tr>
+                <tr>
+                    <td>{{ data.startupFrames }}</td>
+                    <td>{{ data.activeFrames }}</td>
+                    <td> {{ data.recoveryFrames}} </td>
+                    <td> {{ data.onBlockFrames }} </td>
+                </tr>
+            </table>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="Specials"></mat-tab>
+    <mat-tab label="Overdrives"></mat-tab>
+</mat-tab-group>

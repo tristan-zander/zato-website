@@ -1,14 +1,25 @@
+<mat-sidenav-container>
 
-<nav>
-  <ul>
-    <li>Home</li>
-    <li>Framedata</li>
-    <li>About</li>
-  </ul>
-</nav>
+  <mat-sidenav #navbar mode="over">
+      <ul>
+        <li>Home</li>
+        <li>Framedata</li>
+        <li>About</li>
+      </ul>
+  </mat-sidenav>
 
-<app-hero></app-hero>
+  <mat-sidenav-content>
 
-<app-framedata></app-framedata>
+    <button mat-raised-button (click)="navbar.toggle()">Navbar</button>
+
+
+    <app-hero></app-hero>
+
+    <app-framedata></app-framedata>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
 
 <router-outlet></router-outlet>

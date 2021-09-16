@@ -1,17 +1,21 @@
 <mat-sidenav-container>
 
   <mat-sidenav #navbar mode="over">
-      <ul>
-        <li>Home</li>
-        <li>Framedata</li>
-        <li>About</li>
-      </ul>
+    <ul>
+      <li>Home</li>
+      <li>Framedata</li>
+      <li>About</li>
+    </ul>
   </mat-sidenav>
 
   <mat-sidenav-content>
-
-    <button mat-raised-button (click)="navbar.toggle()">Navbar</button>
-
+  
+    <mat-toolbar>
+      <button mat-icon-button (click)="navbar.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Zato One</span>
+    </mat-toolbar>
 
     <app-hero></app-hero>
 
@@ -20,6 +24,5 @@
   </mat-sidenav-content>
 
 </mat-sidenav-container>
-
 
 <router-outlet></router-outlet>

@@ -7,5 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent  {
 
+  parallax(event: MouseEvent) {
+    // console.debug(event)
+  }
 
 }

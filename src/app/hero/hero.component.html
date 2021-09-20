@@ -1,4 +1,4 @@
-<div (mousemove)="parallax($event)" class="hero-container" #container >
+<div (mousemove)="parallax($event)" (mouseleave)="mouseExit($event)" class="hero-container" #container >
     <img src="assets/zato-hero.webp" #image />
     <span>
         <h1>Zato 1</h1>

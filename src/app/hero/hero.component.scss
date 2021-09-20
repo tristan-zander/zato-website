@@ -1,20 +1,25 @@
 .hero-container {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     margin: 0;
     padding: 0;
     position: relative;
+    overflow: hidden;
+    background-image: url("../../assets/background.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-container > img {
-    --x: 0;
-    --y: 25%;
     position: absolute;
     top: var(--y);
     left: var(--x);
-    width: 50%;
-
-    z-index: -1;
+    width: 80%;
+    
+    z-index: 1;
 
     // transition: top 0.5s linear, left 0.5s linear;
  }
